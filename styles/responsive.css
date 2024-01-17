@@ -1,0 +1,378 @@
+/* Tablet Responsive */
+/* Header section styles */
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  .header-section {
+    width: 90%;
+  }
+  .logo-section {
+    width: 100%;
+    gap: 9px;
+  }
+  .logo-section img {
+    width: 28px;
+  }
+  .logo-title {
+    font-size: 21px;
+  }
+  .menu ul {
+    display: flex;
+    gap: 20px;
+  }
+  /* Banner section */
+  .banner {
+    width: 90%;
+    height: 42vh;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+  .banner .banner-title {
+    font-size: 30px;
+    padding-top: 32px;
+    width: 90%;
+    margin: 50px auto;
+  }
+  .location-search {
+    width: 90%;
+    gap: 20px;
+  }
+  /* Our Popular Tours section */
+  .Popular-Tours {
+    width: 90%;
+    flex-direction: column;
+    margin-top: -16px;
+    margin-bottom: 24px;
+  }
+  .Tours-text-section {
+    width: 100%;
+  }
+  .ccommon-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .tours-images {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .common-btn {
+    margin-bottom: 30px;
+  }
+  /* Choose Your Destination section */
+  .Destination-section {
+    width: 90%;
+  }
+  .container {
+    gap: 18px 18px;
+    margin: 18px auto;
+  }
+  /* Why Choose Us section */
+  .travel-card {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .travel-card-secton {
+    gap: 16px 16px;
+    margin-top: 30px;
+  }
+  .text-turess {
+    width: 500px;
+  }
+  /* Deal &  Discounts section */
+
+  .discount {
+    width: 90%;
+    padding-bottom: 24px;
+  }
+  .price-table {
+    width: 50%;
+  }
+  .icon-ber {
+    gap: 8px;
+  }
+  .price-table .card-text {
+    width: 370px;
+  }
+  .new-btn-all {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  /* Newsletter Section */
+  .Newsletter-section {
+    width: 90%;
+  }
+  .news-from .tours-text {
+    width: 334px;
+  }
+
+  .discount-section{
+    width: 70%;
+  }
+  .discount-section-offer{
+    width: 210px;
+    height: 99px;
+    top: 73%;
+    left: 40%;
+  }
+  .discount-section-offer h6{
+    font-size: 18px;
+  }
+  .discount-section-offer .save{
+    font-size: 25px;
+  }
+  /* Footer section */
+  .footer{
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .text-area hr{
+    width: 560px;
+    margin-bottom: 10px;
+  }
+  .text-area ul{
+    margin-bottom: 10px;
+  }
+  .footer-text{
+    width: 548px;
+  }
+}
+
+
+
+
+/* Mobile Responsive */
+
+/* Header section styles */
+
+@media screen and (max-width: 600px) {
+  .header-section {
+    width: 95%;
+  }
+  .logo-section {
+    width: 100%;
+    gap: 9px;
+  }
+  .logo-section img {
+    width: 28px;
+  }
+  .logo-title {
+    font-size: 21px;
+  }
+  .menu ul i {
+    color: black;
+    font-size: 24px;
+  }
+  .menu ul a {
+    display: none;
+  }
+
+  /* Banner section  */
+  .banner {
+    width: 95%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .banner .banner-title {
+    font-size: 22px;
+    padding-top: 32px;
+    width: 90%;
+    margin: auto;
+  }
+  .banner .banner-text {
+    width: 90%;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 5px;
+  }
+  .location-search {
+    width: 80%;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .search-btn {
+    justify-content: center;
+  }
+  .location-search input,
+  #pet-select,
+  .search-btn {
+    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* Our Popular Tours section */
+
+  .Popular-Tours {
+    width: 95%;
+    flex-direction: column;
+    margin-top: -16px;
+    margin-bottom: 24px;
+  }
+  .Tours-text-section {
+    width: 100%;
+  }
+  .ccommon-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .tours-text {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .tours-images {
+    width: 100%;
+  }
+  .tours-images {
+    margin-top: 24px;
+    margin-left: 0px;
+  }
+  /* Choose Your Destination section */
+  .Destination-section {
+    width: 95%;
+    overflow: hidden;
+  }
+
+  .popular-text {
+    width: 80%;
+  }
+  .container {
+    margin: 0 auto;
+    gap: 16px 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "Maldives"
+      "Indonesia"
+      "Srilanka"
+      "North-America"
+      "Kashmir"
+      "Bangladesh"
+      "Bandarban";
+  }
+  .container img {
+    width: 95%;
+  }
+  /* Why Choose Us section */
+  .travel-card {
+    width: 95%;
+    margin-bottom: 40px;
+  }
+  .travel-card-secton {
+    gap: 16px 16px;
+    margin-top: 16px;
+  }
+  .Handpicked-title {
+    font-size: 20px;
+  }
+  .card-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .discount-text-one {
+    width: 309px;
+  }
+
+  /* Deal &  Discounts section */
+  .discount {
+    width: 95%;
+    margin-bottom: 16px;
+  }
+  .discount-banner-image {
+    height: 500px;
+    margin-top: 16px;
+    align-items: flex-end;
+    padding: 16px 16px;
+  }
+  .margin-top {
+    margin-top: 16px;
+  }
+  .price-table {
+    width: 90%;
+    padding: 13px;
+
+    align-items: center;
+  }
+  .price-table .card-text {
+    width: 254px;
+  }
+  .price-title {
+    font-size: 16px;
+  }
+  .Handpicked-title {
+    font-size: 20px;
+  }
+  .icon-ber {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: start;
+  }
+  .time {
+    margin: 0;
+    padding: 0;
+  }
+  .new-itex {
+    width: 300px;
+  }
+  .new-btn-all {
+    display: none;
+  }
+  /* Newsletter Section */
+  .Newsletter-section {
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .news-from {
+    width: auto;
+    height: auto;
+    padding: 24px;
+  }
+  .news-from input {
+  }
+  .news-from .tours-text {
+    width: auto;
+  }
+  .discount-section {
+    width: 100%;
+    height: 300px;
+  }
+  .discount-section-offer h6 {
+    font-size: 15px;
+  }
+  .discount-section-offer .save {
+    font-size: 21px;
+  }
+  .discount-section-offer {
+    width: 214.023px;
+    height: 79.268px;
+    top: 60%;
+    left: 38%;
+  }
+  .discount-section-offer:hover {
+    left: 30%;
+  }
+  /* footer section styles */
+  .footer{
+    padding-top: 33px;
+    margin-top: 24px;
+    padding-bottom: 0px;
+  }
+  .footer-text{
+    width: 287px;
+    font-size: 14px;
+  }
+  .text-area hr{
+    width: 335px;
+  }
+  .text-area ul{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .text-area hr{
+    margin-bottom: 0px;
+  }
+  .text-area ul a{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,523 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  --main-font: "Mulish", sans-serif;
+  --second-font: "Inter", sans-serif;
+  --main-color: #ff5400;
+  --heading-color: #131318;
+  --text-color: rgba(19, 19, 24, 0.7);
+}
+/* Header section styles */
+
+.header-section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.logo-section {
+  display: flex;
+  width: 30%;
+  gap: 20px;
+  cursor: pointer;
+}
+.logo-section img {
+  width: 48px;
+}
+.logo-title {
+  font-size: 36px;
+  font-family: var(--main-font);
+  color: var(--heading-color);
+  font-weight: 800;
+}
+.logo-section:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.3);
+}
+.menu ul i {
+  color: white;
+}
+
+.menu ul {
+  display: flex;
+  gap: 44px;
+}
+.menu ul a {
+  text-decoration: none;
+  color: #424247;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu ul a:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.4);
+  color: rgb(112, 3, 3);
+}
+
+/* Banner section  */
+.banner {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(7, 2, 17, 0) 100%
+    ),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.banner .banner-title {
+  color: white;
+  font-family: var(--main-font);
+  font-size: 64px;
+  font-weight: 800;
+  padding-top: 106px;
+}
+.banner .banner-text {
+  color: white;
+  width: 676px;
+  margin: 0 auto;
+  font-family: var(--main-font);
+  line-height: 26px;
+  text-align: center;
+  padding: 0;
+}
+.location-search {
+  display: flex;
+  margin: 48px auto auto auto;
+  width: 70%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.location-search input,
+#pet-select,
+.search-btn {
+  color: rgba(19, 19, 24, 0.5);
+  font-family: var(--main-font);
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  width: 174px;
+  height: 52px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  display: block;
+}
+.search-btn {
+  display: flex;
+  background-color: var(--main-color);
+  color: #fff;
+  align-items: center;
+}
+.search-btn:hover{
+transform: scale(1.1);
+opacity: .8;
+
+}
+
+/* Our Popular Tours section */
+.Popular-Tours {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+}
+.Tours-text-section {
+  width: 50%;
+}
+.tours-images {
+  display: block;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  margin-left: 53px;
+}
+.tours-images img {
+  width: 100%;
+}
+.ccommon-title {
+  color: var(--heading-color);
+  font-family: var(--main-font);
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.tours-text {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: var(--main-font);
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.tours-text ul li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: var(--main-font);
+  line-height: 26px;
+}
+.common-btn {
+  border-radius: 8px;
+  background: #ff5400;
+  width: 174px;
+  height: 52px;
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+.common-btn:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+  background-color: var(--heading-color);
+  opacity: 0.5;
+}
+
+/* Choose Your Destination section */
+.Destination-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.popular {
+  align-items: center;
+  text-align: center;
+}
+.popular-text {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.container {
+  margin-top: 48px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 24px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Maldives Maldives Maldives Indonesia Indonesia Indonesia"
+    "Srilanka Srilanka North-America North-America Kashmir Kashmir"
+    "Bangladesh Bangladesh Bandarban Bandarban Bandarban Bandarban";
+}
+.container img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.Maldives {
+  grid-area: Maldives;
+}
+
+.Indonesia {
+  grid-area: Indonesia;
+}
+
+.Srilanka {
+  grid-area: Srilanka;
+}
+
+.North-America {
+  grid-area: North-America;
+}
+
+.Kashmir {
+  grid-area: Kashmir;
+}
+
+.Bangladesh {
+  grid-area: Bangladesh;
+}
+
+.Bandarban {
+  grid-area: Bandarban;
+}
+/* Why Choose Us*/
+.travel-card {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.travel-card-secton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px 24px;
+  align-items: center;
+  align-items: center;
+  margin-top: 48px;
+}
+.Handpicked-Hotels {
+  flex-basis: 573px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 32px 79px 32px 32px;
+}
+.card-two {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.card-three {
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.Handpicked-title {
+  font-family: var(--main-font);
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 800;
+}
+.card-text {
+  font-family: var(--main-font);
+  color: #5a5a5d;
+  line-height: 26px;
+}
+
+/* Discount section */
+
+.discount {
+  width: 80%;
+  margin: 0 auto;
+}
+.discount-banner-image {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+  height: 600px;
+  background-image: url(../Images/Group\ 39.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  padding-right: 56px;
+  border-radius: 16px;
+  gap: 24px;
+}
+.margin-top {
+  margin-top: 24px;
+  justify-content: flex-start;
+  padding-left: 56px;
+  background-image: url(../Images/Group\ 40.png);
+}
+.price-table {
+  width: 40%;
+  height: 320px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  /* margin: 56px 56px 56px auto; */
+  text-align: start;
+  padding: 50px;
+}
+.icon-ber {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.time {
+  color: #5a5a5d;
+  font-family: Mulish;
+}
+.price-title {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.price-table .card-text {
+  width: 452px;
+}
+.new-btn-all {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 100px;
+}
+.sell-btn {
+  width: 210px;
+  height: 52px;
+}
+
+/* A Simple Perfect Place To Get Lost section  */
+.video-section {
+  align-items: center;
+}
+
+.boolet-point li {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+.video-section ul.boolet-point {
+  padding-left: 0px;
+}
+.tours-images iframe {
+  border-radius: 16px;
+  border: none;
+}
+
+/* Newsletter Section */
+
+.Newsletter-section {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  gap: 24px;
+}
+.news-from {
+  width: 40%;
+  height: 422px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+}
+.news-from .tours-text {
+  width: 350px;
+}
+.news-from hr {
+  height: 1px;
+  border: none;
+  background: rgba(19, 19, 24, 0.1);
+}
+.news-from input {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  margin-top: 24px;
+  margin-bottom: 16px;
+  border: none;
+}
+.news-from #email {
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+.subcribe {
+  width: 100%;
+}
+.discount-section {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 60%;
+  background-image: url(../Images/newsletter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.discount-section-offer {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  background-color: #ff5400;
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.discount-section-offer h6 {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.discount-section-offer .save {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 0px;
+}
+.discount-section-offer:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+  left: 59%;
+}
+
+/* footer section */
+
+.footer {
+  height: auto;
+  background: rgba(19, 19, 24, 0.05);
+  padding-top: 110px;
+  margin-top: 100px;
+  padding-bottom: 110px;
+  text-align: center;
+  align-items: center;
+}
+.footer-logo-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.footer-logo-section img {
+  width: 40px;
+}
+.footer-text {
+  width: 769px;
+  margin: auto;
+  color: #5a5a5d;
+  text-align: center;
+  font-family: Mulish;
+  line-height: 26px;
+  margin-top: 15px;
+}
+.text-area ul {
+  width: 174px;
+  display: flex;
+  margin: auto;
+  gap: 32px;
+  align-items: center;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+.text-area ul a {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+.text-area hr {
+  width: 872px;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.10);
+  border: none;
+  margin-bottom: 50px;
+}
